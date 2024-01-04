@@ -4,6 +4,10 @@ class console:
 
     def log(text: str):
         content = _category.LOG + text
+        print(f'[ {_date.now()} ] {content}', end='')
+
+    def logl(text: str):
+        content = _category.LOG + text
         print(f'[ {_date.now()} ] {content}')
 
     def info(text: str):
