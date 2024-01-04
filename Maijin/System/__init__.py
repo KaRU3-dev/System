@@ -1,0 +1,3 @@
+"""
+Maijin's system package
+"""

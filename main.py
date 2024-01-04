@@ -1,10 +1,10 @@
-import Maijin.System as System
+import Maijin.System.console as console
 
-System.console.log()     # With no new line
+console.log()     # With no new line
 print()
-System.console.logl()    # With new line
-System.console.info()    # Info
-System.console.debug()   # Debug
-System.console.success() # Success
-System.console.warn()    # Warn
-System.console.error()   # Error
+console.logl()    # With new line
+console.info()    # Info
+console.debug()   # Debug
+console.success() # Success
+console.warn()    # Warn
+console.error()   # Error
