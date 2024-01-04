@@ -1,3 +1,16 @@
+"""
+Maijin.System\n
+Useful system functions.\n
+@type: module
+@class: console, _colors, _category, _date
+\n\n
+@example:
+>>> import Maijin.System as System
+>>> System.console.log('Hello World!')
+[ 2021-01-01 00:00:00 ] LOG     : Hello World!
+"""
+
+
 import datetime as dt
 
 class console:
@@ -16,7 +29,7 @@ class console:
     >>> System.console.error('Hello World!')   # Error
     """
 
-    def log(text: str):
+    def log(text: str=""):
         """
         White text with no new line
         @output: [ YYYY-MM-DD HH:MM:SS ] LOG     : Hello World!
@@ -26,7 +39,7 @@ class console:
         content = _category.LOG + text
         print(f'[ {_date.now()} ] {content}', end='')
 
-    def logl(text: str):
+    def logl(text: str=""):
         """
         White text with new line
         @output: [ YYYY-MM-DD HH:MM:SS ] LOG     : Hello World!(\\n)
@@ -36,7 +49,7 @@ class console:
         content = _category.LOG + text
         print(f'[ {_date.now()} ] {content}')
 
-    def info(text: str):
+    def info(text: str=""):
         """
         Cyan text with new line
         @output: [ YYYY-MM-DD HH:MM:SS ] INFO    : Hello World!(\\n)
@@ -46,7 +59,7 @@ class console:
         content = _category.INFO + text
         print(f'[ {_date.now()} ] {content}')
 
-    def debug(text: str):
+    def debug(text: str=""):
         """
         Blue text with new line
         @output: [ YYYY-MM-DD HH:MM:SS ] DEBUG   : Hello World!(\\n)
@@ -56,7 +69,7 @@ class console:
         content = _category.DEBUG + text
         print(f'[ {_date.now()} ] {content}')
 
-    def success(text: str):
+    def success(text: str=""):
         """
         Green text with new line
         @output: [ YYYY-MM-DD HH:MM:SS ] SUCCESS : Hello World!(\\n)
@@ -66,7 +79,7 @@ class console:
         content = _category.SUCCESS + text
         print(f'[ {_date.now()} ] {content}')
 
-    def warn(text: str):
+    def warn(text: str=""):
         """
         Yellow text with new line
         @output: [ YYYY-MM-DD HH:MM:SS ] WARN    : Hello World!(\\n)
@@ -76,7 +89,7 @@ class console:
         content = _category.WARN + text
         print(f'[ {_date.now()} ] {content}')
 
-    def error(text: str):
+    def error(text: str=""):
         """
         Red text with new line
         @output: [ YYYY-MM-DD HH:MM:SS ] ERROR   : Hello World!(\\n)
