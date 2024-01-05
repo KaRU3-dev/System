@@ -1,4 +1,4 @@
-import Maijin.System.console as console
+from Maijin.System import console
 
 console.log()     # With no new line
 print()

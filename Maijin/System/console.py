@@ -1,6 +1,7 @@
 """
 Console output with color and date.\n
 This class is joined with module Maijin.System.\n
+⚠️: These mthod can output only string. If you call method, convert to string.
 @type: public
 @usedClass: color, _category, _date
 @example:
